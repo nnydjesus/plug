@@ -26,7 +26,7 @@ defmodule Plug.Mixfile do
 
   def deps do
     [{:mime, "~> 1.0"},
-     {:cowboy, "~> 1.0", optional: true},
+     { :cowboy, git: "https://github.com/ninenines/cowboy.git", tag: "2.0.0-pre.3" },
      {:ex_doc, "~> 0.12", only: :docs},
      {:inch_ex, ">= 0.0.0", only: :docs},
      {:hackney, "~> 1.2.0", only: :test}]
